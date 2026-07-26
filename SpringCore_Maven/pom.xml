@@ -1,0 +1,103 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- Defines the Maven model version -->
+    <modelVersion>4.0.0</modelVersion>
+
+
+    <!-- Project Information -->
+    <groupId>com.library</groupId>
+    <artifactId>SpringCore_Maven</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <!-- Project Properties -->
+    <properties>
+
+        <!-- Configure Java compiler version as required by Exercise 4 -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <!-- Encoding configuration -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    </properties>
+
+
+    <!-- Spring Dependencies -->
+    <dependencies>
+
+
+        <!-- Spring Context:
+             Provides Spring IoC container and ApplicationContext
+             Used for creating and managing Spring Beans
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.30</version>
+        </dependency>
+
+
+        <!-- Spring AOP:
+             Provides Aspect Oriented Programming support
+             Used for cross-cutting concerns like logging and security
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>5.3.30</version>
+        </dependency>
+
+
+        <!-- Spring Web MVC:
+             Provides support for developing web applications
+             using Spring MVC framework
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.3.30</version>
+        </dependency>
+
+
+    </dependencies>
+
+
+    <!-- Maven Build Configuration -->
+    <build>
+
+        <plugins>
+
+
+            <!-- Maven Compiler Plugin:
+                 Compiles Java source code
+                 Configured to use Java 1.8
+            -->
+            <plugin>
+
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+
+                <configuration>
+
+                    <!-- Java source version -->
+                    <source>1.8</source>
+
+                    <!-- Java bytecode target version -->
+                    <target>1.8</target>
+
+                </configuration>
+
+            </plugin>
+
+
+        </plugins>
+
+    </build>
+
+
+</project>
